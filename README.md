@@ -1,23 +1,14 @@
 # Root Shell LLC
 
-Static splash website for **https://getroot.sh**. Source repository: https://github.com/Team-Volt/getroot.sh, private.
+Static splash website for **https://getroot.sh**. Source repository: https://github.com/Team-Volt/getroot.sh, public.
 
 The website lives in `docs/`. It needs no build, package manager, JavaScript, external fonts, analytics, or third-party runtime. The company information is readable without animation. All navigation links point to real sections on the page.
 
-## Hosting status
+## Hosting
 
-Team-Volt currently uses GitHub Free for organizations. GitHub Pages requires GitHub Team or Enterprise to publish from an organization's private repository. Source visibility must stay private. No plan purchase, visibility change, or DNS change is authorized as a workaround.
+The repository is public with the owner's approval. GitHub Pages publishes `main /docs`; `docs/CNAME` sets the intended custom domain to `getroot.sh`. No build step is needed, and pushes to `main` automatically rebuild the site.
 
-This repository is prepared for Pages using **main /docs**. `docs/CNAME` contains `getroot.sh`; this file alone does not register the domain or enable hosting. The site has not been deployed while private Pages is unavailable. The expected Pages URL, once enabled, is `https://team-volt.github.io/getroot.sh/`; after adding the custom domain it redirects to `https://getroot.sh/`.
-
-Verified on 2026-10-02: creating Pages with `POST /repos/Team-Volt/getroot.sh/pages` returned HTTP 422, `Your current plan does not support GitHub Pages for this repository.` Reading the Pages configuration returned HTTP 404. The repository remained private. There is no live public preview or custom-domain certificate for this deployment yet.
-
-Choices to unblock publication:
-
-- The owner can upgrade Team-Volt to GitHub Team, then enable Pages as below.
-- Keep the repository private and connect another static host that supports private repositories, such as Cloudflare Pages or Netlify. Deployment and DNS values will depend on the selected host and its authorized account. Nothing has been provisioned with another provider.
-
-GitHub documents plan eligibility at https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages.
+GitHub's default deployment address is `https://team-volt.github.io/getroot.sh/`. Once the custom domain is configured, it redirects to `https://getroot.sh/`. The domain owner handles DNS. A successful Pages build does not mean custom-domain DNS or HTTPS is ready; verify those separately using the commands below.
 
 ## Preview locally
 
@@ -27,7 +18,7 @@ python3 -m http.server 8080 --directory docs
 
 Open http://localhost:8080. To edit the page, change `docs/index.html` and `docs/styles.css`. The design contract is in `DESIGN.md`.
 
-## Enable GitHub Pages after the plan supports it
+## GitHub Pages configuration
 
 In repository **Settings → Pages**, choose **Deploy from a branch**, branch **main**, folder **/docs**. Save, then set **Custom domain** to **getroot.sh** and save it before changing DNS. Subsequent pushes to `main` automatically rebuild Pages.
 
