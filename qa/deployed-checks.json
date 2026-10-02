@@ -1,0 +1,19 @@
+{
+  "method": "Temporary Chrome DNS override to GitHub Pages IP, HTTP requested, TLS errors ignored if browser upgrades. This verifies deployed content, not public DNS or HTTPS readiness.",
+  "checks": [
+    {
+      "view": "desktop",
+      "status": 200,
+      "url": "http://getroot.sh/",
+      "title": "Root Shell LLC | Software, AI & technology consulting",
+      "overflow": false
+    },
+    {
+      "view": "mobile",
+      "status": 200,
+      "url": "http://getroot.sh/",
+      "title": "Root Shell LLC | Software, AI & technology consulting",
+      "overflow": false
+    }
+  ]
+}

@@ -10,6 +10,10 @@ The repository is public with the owner's approval. GitHub Pages publishes `main
 
 GitHub's default deployment address is `https://team-volt.github.io/getroot.sh/`. Once the custom domain is configured, it redirects to `https://getroot.sh/`. The domain owner handles DNS. A successful Pages build does not mean custom-domain DNS or HTTPS is ready; verify those separately using the commands below.
 
+Verified on 2026-10-02: GitHub Pages build and deployment succeeded, the repository is public, and `getroot.sh` is registered as the custom domain. Deployed HTML matched `docs/index.html` byte for byte when requesting GitHub Pages with a temporary DNS override. Desktop and mobile captures are in `qa/deployed-*.png`.
+
+At this check the apex A record still returned `127.0.0.1`, while `www` pointed to `team-volt.github.io`. Replace the apex A record with all four GitHub Pages addresses below. GitHub reported `is_https_eligible: false` for the apex and `https_enforced: false`; a direct TLS check at GitHub Pages did not have a certificate for `getroot.sh`. Custom-domain HTTPS remains pending DNS and certificate provisioning. No DNS records were changed by this work.
+
 ## Preview locally
 
 ```sh
