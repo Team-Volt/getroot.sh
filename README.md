@@ -10,6 +10,8 @@ Team-Volt currently uses GitHub Free for organizations. GitHub Pages requires Gi
 
 This repository is prepared for Pages using **main /docs**. `docs/CNAME` contains `getroot.sh`; this file alone does not register the domain or enable hosting. The site has not been deployed while private Pages is unavailable. The expected Pages URL, once enabled, is `https://team-volt.github.io/getroot.sh/`; after adding the custom domain it redirects to `https://getroot.sh/`.
 
+Verified on 2026-10-02: creating Pages with `POST /repos/Team-Volt/getroot.sh/pages` returned HTTP 422, `Your current plan does not support GitHub Pages for this repository.` Reading the Pages configuration returned HTTP 404. The repository remained private. There is no live public preview or custom-domain certificate for this deployment yet.
+
 Choices to unblock publication:
 
 - The owner can upgrade Team-Volt to GitHub Team, then enable Pages as below.
