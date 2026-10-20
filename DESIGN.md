@@ -36,4 +36,4 @@ Semantic header/nav/main/section/footer; single h1; real fragment links; descrip
 
 ## 8. Content and accepted limitations
 
-Visitors should understand that Root Shell LLC builds software and AI products and provides technology consulting. The site has no contact CTA because no verified public contact address was supplied. The owner approved public source and GitHub Pages hosting. Domain DNS changes remain the owner's responsibility. Verify deployment and custom-domain HTTPS independently.
+Visitors should understand that Root Shell LLC builds software and AI products and provides technology consulting. The footer displays contact@getroot.sh as a native email link. The owner approved public source and GitHub Pages hosting. Domain DNS changes remain the owner's responsibility. Verify deployment and custom-domain HTTPS independently.

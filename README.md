@@ -2,7 +2,7 @@
 
 Static splash website for **https://getroot.sh**. Source repository: https://github.com/Team-Volt/getroot.sh, public.
 
-The website lives in `docs/`. It needs no build, package manager, JavaScript, external fonts, analytics, or third-party runtime. The company information is readable without animation. All navigation links point to real sections on the page.
+The website lives in `docs/`. It needs no build, package manager, JavaScript, external fonts, analytics, or third-party runtime. The company information is readable without animation. Section navigation links point to real sections on the page. The footer email link opens the visitor's mail handler for contact@getroot.sh.
 
 ## Hosting
 
